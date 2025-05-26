@@ -158,6 +158,11 @@ input::-webkit-outer-spin-button {
     cursor: pointer;
 }
 
+.form__select:hover {
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+}
+
 .form__select--input {
     flex: 1;
     min-width: 117px;
@@ -167,6 +172,15 @@ input::-webkit-outer-spin-button {
     color: var(--color-secondary);
     text-align: center;
     border-radius: 5px;
+}
+
+.form__select--input:hover {
+    outline-color: transparent;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-primary);
+    background-color: var(--color-bg);
 }
 
 .form__select--input::placeholder {
@@ -233,6 +247,10 @@ input::-webkit-outer-spin-button {
     height: 48px;
     font-size: 20px;
     font-weight: inherit;
+}
+
+.display__button:hover {
+    background-color: var(--color-bg);
 }
 
 .state--active {
