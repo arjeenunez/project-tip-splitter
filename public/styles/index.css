@@ -269,6 +269,10 @@ input::-webkit-outer-spin-button {
     .wrapper__div--container {
         top: 7%;
     }
+    .form {
+        padding: 8px;
+    }
+
     .display {
         min-height: fit-content;
         height: 256px;
