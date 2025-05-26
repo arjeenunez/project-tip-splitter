@@ -1,0 +1,240 @@
+:root {
+    --color-primary: hsl(172, 67%, 45%);
+    --color-secondary: hsl(183, 100%, 15%);
+    --color-text: hsl(186, 14%, 43%);
+    --color-logo: hwb(186 50% 38%);
+    --color-bg: hsl(185, 41%, 84%);
+    --color-input: hsl(189, 47%, 97%);
+    --color-white: hsl(0, 100%, 100%);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-bg);
+}
+
+.attribution {
+    display: none; /* NOTE: To delete afterwards */
+    position: absolute;
+    bottom: 15px;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: var(--color-text);
+}
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    max-width: 920px;
+    max-height: 480px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-flow: row wrap;
+    padding: 32px;
+    border-radius: 22px;
+}
+
+.calculator-section {
+    flex: 1;
+    max-width: 413px;
+    height: 100%;
+    min-width: 328px; NOTE: Added mobile min-width
+}
+
+.section-form {
+    padding: 16px; TODO: Change during mobile
+}
+
+.form-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 9px;
+}
+
+.form-input-container {
+    position: relative;
+    margin-bottom: 43px;
+}
+
+.form-img {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 16px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.form-input {
+    width: 100%;
+    appearance: none;
+    height: 48px;
+    font-size: 24px;
+    z-index: 1;
+    background-color: var(--color-input);
+    border: 1px solid var(--color-bg);
+    text-align: right;
+    padding-right: 16px;
+    border-radius: 5px;
+    color: var(--color-secondary);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-select-container {
+    min-height: 131px;
+    padding: 9px 0;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 14px;
+    row-gap: 16px;
+    margin-bottom: 34px;
+}
+
+.select-button {
+    flex: 1;
+    min-width: 117px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    color: var(--color-bg);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.select-input {
+    background-color: var(--color-input);
+    border: 1px solid var(--color-bg);
+    color: var(--color-secondary);
+}
+
+.active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.section-display {
+    border-radius: 15px;
+    background-color: var(--color-secondary);
+    padding: 40px; TODO: Change during mobile
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.display-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 168px;
+}
+
+.container-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-prim,
+.text-seco {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.text-prim {
+    font-size: 16px;
+    color: var(--color-bg);
+}
+
+.text-seco {
+    font-size: 13px;
+    color: var(--color-logo);
+}
+
+h2 {
+    font-size: 48px;
+    letter-spacing: -2.5%;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+button {
+    appearance: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    height: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: var(--color-text);
+} */

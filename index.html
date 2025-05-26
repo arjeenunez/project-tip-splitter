@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Frontend Mentor | Tip calculator app</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/favicon-32x32.png" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./public/styles/index.css" />
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer type="module" src="./public/scripts/index.js"></script>
+    </head>
+    <body>
+        <main class="wrapper">
+            <div class="app">
+                <div class="form">
+                    <h4 class="form__label">Bill</h4>
+                    <div class="form__input--container">
+                        <input type="number" class="form__input" />
+                        <img src="./public/assets/icon-dollar.svg" class="form__input--img" alt="icon dollar" />
+                    </div>
+                    <h4 class="form__label">Select Tip %</h4>
+                    <div class="form__select--container">
+                        <div class="form__select">5%</div>
+                        <div class="form__select">10%</div>
+                        <div class="form__select">15%</div>
+                        <div class="form__select">25%</div>
+                        <div class="form__select">50%</div>
+                        <input type="number" class="form__select--input" placeholder="Custom" />
+                    </div>
+                    <h4 class="form__label">Number of People</h4>
+                    <div class="form__input--container">
+                        <input type="number" class="form__input" step="1" />
+                        <img src="./public/assets/icon-person.svg" class="form__input--img" alt="icon dollar" />
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="display__content--container">
+                        <div class="display__content">
+                            <div class="display__content--header-container">
+                                <p class="display__content--text1">Tip Amount</p>
+                                <p class="display__content--text2">/ person</p>
+                            </div>
+                            <h2 class="display__content--title">$4.27</h2>
+                        </div>
+                        <div class="display__content">
+                            <div class="display__content--header-container">
+                                <p class="display__content--text1">Total</p>
+                                <p class="display__content--text2">/ person</p>
+                            </div>
+                            <h2 class="display__content--title">$32.79</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="display__button">RESET</button>
+                </div>
+            </div>
+            <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Arjee G. Nuñez</a>.</div>
+        </main>
+    </body>
+</html>
