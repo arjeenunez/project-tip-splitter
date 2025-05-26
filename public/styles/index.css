@@ -276,6 +276,7 @@ input::-webkit-outer-spin-button {
     .display {
         min-height: fit-content;
         height: 256px;
+        flex-direction: column;
     }
     .display__content--container {
         max-height: fit-content;

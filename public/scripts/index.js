@@ -42,6 +42,14 @@ function init() {
         }
         calculate().call(evt.target, evt);
     });
+
+    document.querySelector('.display__button').addEventListener('click', function () {
+        bill = 0;
+        people = 0;
+        document.querySelectorAll('.form__input').forEach(input => (input.value = ''));
+        document.querySelectorAll('.js__choice').forEach(select => select.classList.remove('state--active'));
+        updateDisplay(0, 0);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', init);
