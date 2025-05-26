@@ -278,6 +278,7 @@ input::-webkit-outer-spin-button {
     .app {
         margin-top: 50%;
         border-radius: 22px 22px 0 0;
+        padding: 24px;
     }
 
     .wrapper__div--container {
