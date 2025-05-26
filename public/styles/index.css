@@ -89,7 +89,7 @@ body {
 .form__input--text-error {
     position: absolute;
     display: block;
-    top: -39px;
+    top: -31px;
     right: 0;
     width: fit-content;
     font-size: 16px;
@@ -258,6 +258,17 @@ input::-webkit-outer-spin-button {
 
 .state--hidden {
     display: none;
+}
+
+.state--error {
+    color: red;
+    border: 1px solid red;
+    &:focus {
+        outline-color: red;
+        outline: none;
+        border-width: 2px;
+        border-style: solid;
+    }
 }
 
 .attribution {

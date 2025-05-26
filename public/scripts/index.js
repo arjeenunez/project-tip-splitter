@@ -13,7 +13,17 @@ function init() {
     const calculate = function () {
         return function (evt) {
             if (this.classList.contains('js__bill')) bill = +evt.target.value ?? 0;
-            if (this.classList.contains('js__people')) people = +evt.target.value ?? 1;
+            if (this.classList.contains('js__people')) {
+                if (+evt.target.value <= 0) {
+                    console.log('Invalid number of people');
+                    document.querySelector('.form__input--text-error').classList.remove('state--hidden');
+                    this.classList.add('state--error');
+                    return;
+                }
+                document.querySelector('.form__input--text-error').classList.add('state--hidden');
+                this.classList.remove('state--error');
+                people = +evt.target.value ?? 1;
+            }
             let tipAmount = 0;
             let total = bill;
             document.querySelectorAll('.js__choice').forEach(function (select) {
@@ -32,6 +42,9 @@ function init() {
 
     document.querySelectorAll('.form__input').forEach(function (input, i) {
         input.addEventListener('input', calculate());
+        input.addEventListener('click', function (evt) {
+            this.select();
+        });
     });
 
     document.querySelector('.form__select--container').addEventListener('click', function (evt) {
