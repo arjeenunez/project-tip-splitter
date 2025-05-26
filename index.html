@@ -17,24 +17,31 @@
         <main class="wrapper">
             <div class="app">
                 <div class="form">
-                    <h4 class="form__label">Bill</h4>
-                    <div class="form__input--container">
-                        <input type="number" class="form__input" />
-                        <img src="./public/assets/icon-dollar.svg" class="form__input--img" alt="icon dollar" />
+                    <div class="form--container">
+                        <h4 class="form__label">Bill</h4>
+                        <div class="form__input--container">
+                            <input type="number" class="form__input js__bill" min="0" />
+                            <img src="./public/assets/icon-peso.svg" class="form__input--img" alt="icon dollar" />
+                        </div>
                     </div>
-                    <h4 class="form__label">Select Tip %</h4>
-                    <div class="form__select--container">
-                        <div class="form__select">5%</div>
-                        <div class="form__select">10%</div>
-                        <div class="form__select">15%</div>
-                        <div class="form__select">25%</div>
-                        <div class="form__select">50%</div>
-                        <input type="number" class="form__select--input" placeholder="Custom" />
+                    <div class="form--container">
+                        <h4 class="form__label">Select Tip %</h4>
+                        <div class="form__select--container">
+                            <div class="form__select js__choice">5%</div>
+                            <div class="form__select js__choice">10%</div>
+                            <div class="form__select js__choice">15%</div>
+                            <div class="form__select js__choice">25%</div>
+                            <div class="form__select js__choice">50%</div>
+                            <input type="number" class="form__select--input js__choice" placeholder="Custom" />
+                        </div>
                     </div>
-                    <h4 class="form__label">Number of People</h4>
-                    <div class="form__input--container">
-                        <input type="number" class="form__input" step="1" />
-                        <img src="./public/assets/icon-person.svg" class="form__input--img" alt="icon dollar" />
+                    <div class="form--container">
+                        <h4 class="form__label">Number of People</h4>
+                        <div class="form__input--container">
+                            <input type="number" class="form__input js__people" required step="1" placeholder="Just me" min="1" />
+                            <img src="./public/assets/icon-person.svg" class="form__input--img" alt="icon dollar" />
+                            <span class="form__input--text-error state--hidden">Can't be zero.</span>
+                        </div>
                     </div>
                 </div>
                 <div class="display">
@@ -44,14 +51,14 @@
                                 <p class="display__content--text1">Tip Amount</p>
                                 <p class="display__content--text2">/ person</p>
                             </div>
-                            <h2 class="display__content--title">$4.27</h2>
+                            <h2 class="display__content--title js__tip">₱0.00</h2>
                         </div>
                         <div class="display__content">
                             <div class="display__content--text-container">
                                 <p class="display__content--text1">Total</p>
                                 <p class="display__content--text2">/ person</p>
                             </div>
-                            <h2 class="display__content--title">$32.79</h2>
+                            <h2 class="display__content--title js__total">₱0.00</h2>
                         </div>
                     </div>
                     <button type="button" class="display__button">RESET</button>

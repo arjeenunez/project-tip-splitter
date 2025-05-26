@@ -48,7 +48,6 @@ body {
     max-width: 413px;
     min-width: 327px;
     min-height: 417px;
-    background-color: blue;
 }
 
 .form {
@@ -64,6 +63,18 @@ body {
     line-height: 18px;
     margin-bottom: 9px;
     color: var(--color-text);
+}
+
+.form__input--text-error {
+    position: absolute;
+    display: block;
+    top: -39px;
+    right: 0;
+    width: fit-content;
+    font-size: 16px;
+    color: red;
+    /* margin-top: 8px; */
+    /* margin-bottom: 0; */
 }
 
 .form__input--container {
@@ -89,12 +100,12 @@ body {
 .form__input--img {
     position: absolute;
     z-index: 2;
-    width: 20px;
-    height: 20px;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+    width: 16px;
+    opacity: 0.35;
 }
 
 input::-webkit-inner-spin-button,
@@ -110,7 +121,6 @@ input::-webkit-outer-spin-button {
     flex-flow: row wrap;
     column-gap: 14px;
     row-gap: 16px;
-    margin-bottom: 34px;
     padding: 9px 0;
 }
 
@@ -124,6 +134,11 @@ input::-webkit-outer-spin-button {
     background-color: var(--color-secondary);
     color: var(--color-bg);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__select:hover {
+    /* Add data here */
 }
 
 .form__select--input {
@@ -135,6 +150,12 @@ input::-webkit-outer-spin-button {
     color: var(--color-secondary);
     text-align: center;
     border-radius: 5px;
+}
+
+.form__select--input::placeholder {
+    color: var(--color-secondary);
+    font-weight: bold;
+    opacity: 0.5;
 }
 
 .display {
@@ -195,6 +216,15 @@ input::-webkit-outer-spin-button {
     height: 48px;
     font-size: 20px;
     font-weight: inherit;
+}
+
+.state--active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.state--hidden {
+    display: none;
 }
 
 .attribution {
