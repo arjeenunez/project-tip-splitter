@@ -158,10 +158,6 @@ input::-webkit-outer-spin-button {
     cursor: pointer;
 }
 
-.form__select:hover {
-    /* Add data here */
-}
-
 .form__select--input {
     flex: 1;
     min-width: 117px;
@@ -275,8 +271,8 @@ input::-webkit-outer-spin-button {
 
     .display {
         min-height: fit-content;
-        height: 256px;
-        flex-direction: column;
+        height: 264px;
+        flex-flow: column nowrap;
     }
     .display__content--container {
         max-height: fit-content;
